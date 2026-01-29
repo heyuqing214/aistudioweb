@@ -26,7 +26,7 @@ export const AboutView: React.FC = () => {
          {/* Left: Bio Text (Existing Content) */}
          <div className="space-y-6 text-lg text-neo-black leading-relaxed font-medium">
              <p>
-                 我出生于千禧年，目前就职于<strong>高德地图</strong>，负责 ToB 商业化与人地大数据产品。
+                 我毕业于北京大学，目前就职于<strong>高德地图</strong>，负责 ToB 商业化与人地大数据产品。
              </p>
              <p>
                  比起纯粹的代码，我更喜欢研究数据背后的物理世界。致力于用技术手段解析城市脉搏，
