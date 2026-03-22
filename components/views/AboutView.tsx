@@ -53,7 +53,7 @@ export const AboutView: React.FC = () => {
             <NeoCard className="bg-white p-0 overflow-hidden border-[3px]" hoverEffect={false}>
                 {/* Green Header */}
                 <div className="bg-neo-green h-24 border-b-2 border-neo-black p-4 relative">
-                   <div className="text-[10px] font-bold tracking-widest opacity-60">SHANGHAI JIAOTONG UNIVERSITY (ALUMNI)</div>
+                   <div className="text-[10px] font-bold tracking-widest opacity-60">Peking UNIVERSITY (ALUMNI)</div>
                    <div className="absolute bottom-2 right-4 font-black text-4xl opacity-10">ID CARD</div>
                 </div>
 
@@ -84,7 +84,7 @@ export const AboutView: React.FC = () => {
                    <div className="mt-6 flex items-end justify-between">
                        <div>
                            <div className="text-[10px] font-bold text-gray-400 mb-1">ID NO.</div>
-                           <div className="font-mono font-bold text-sm">XM-20000508-OVO</div>
+                           <div className="font-mono font-bold text-sm">XM-202207-OVO</div>
                            {/* Barcode representation */}
                            <div className="h-8 mt-2 flex items-end gap-[2px] opacity-70">
                                {[...Array(20)].map((_,i) => (
@@ -142,7 +142,7 @@ export const AboutView: React.FC = () => {
                </div>
                <div>
                   <div className="text-xs font-bold text-gray-500 mb-1">最近在读</div>
-                  <div className="font-bold text-sm">《纳瓦尔宝典》</div>
+                  <div className="font-bold text-sm">《马普尔小姐探案集》</div>
                </div>
             </div>
 
@@ -152,8 +152,8 @@ export const AboutView: React.FC = () => {
                   <MonitorPlay size={20} />
                </div>
                <div>
-                  <div className="text-xs font-bold text-gray-500 mb-1">最近狂刷</div>
-                  <div className="font-bold text-sm">鳌太线失事视频</div>
+                  <div className="text-xs font-bold text-gray-500 mb-1">最近在刷</div>
+                  <div className="font-bold text-sm">AI、大模型、小龙虾吧啦吧啦</div>
                </div>
                <div className="absolute top-2 right-2">
                   <ArrowRight size={14} className="transform rotate-45 text-gray-400" />
@@ -167,7 +167,7 @@ export const AboutView: React.FC = () => {
                </div>
                <div>
                   <div className="text-xs font-bold text-gray-500 mb-1">最近感兴趣</div>
-                  <div className="font-bold text-sm">AI 编程</div>
+                  <div className="font-bold text-sm">折腾小龙虾</div>
                </div>
             </div>
          </div>
@@ -234,12 +234,12 @@ export const AboutView: React.FC = () => {
                   <div className="ml-16 md:ml-0 md:w-5/12 md:text-right pr-0 md:pr-8">
                        <div className="bg-pink-50 border-2 border-neo-black rounded-xl p-4 shadow-neo relative">
                           <div className="absolute -top-3 right-4 md:right-auto md:left-4 bg-neo-pink text-neo-black border-2 border-neo-black text-[10px] px-2 py-0.5 rounded font-mono">
-                             2024.01 [LOADING]
+                             2026.01 [LOADING]
                           </div>
                           <div className="mt-2 font-bold text-lg">AI 独立开发者</div>
                           <div className="text-xs font-bold text-neo-pink mb-2">个人探索</div>
                           <div className="text-sm text-gray-600">
-                             业余时间持续学习 AI 技术，尝试将产品思维与 AI 能力结合，打造有价值的 AI 应用。
+                             业余时间持续学习 AI 技术，尝试将产品思维与 AI 能力结合，打造有价值的 AI 应用。同时，独立运营小红书‘一二布布’二创图文账号，通过热点借势与数据驱动的内容策划结合AI生图，实现从0到1的粉丝增长及高互动率，验证了内容创作与用户运营的全链路能力。                         
                           </div>
                           <div className="absolute -bottom-3 -right-3 w-8 h-8 bg-neo-black text-white rounded-full flex items-center justify-center border-2 border-white text-xs">
                              &lt;&gt;
