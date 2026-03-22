@@ -3,7 +3,8 @@ export enum ViewState {
   ABOUT = 'ABOUT',
   ARTICLES = 'ARTICLES',
   VIDEOS = 'VIDEOS',
-  PRODUCTS = 'PRODUCTS'
+  PRODUCTS = 'PRODUCTS',
+  ARTICLE_DETAIL = 'ARTICLE_DETAIL'
 }
 
 export interface Article {
