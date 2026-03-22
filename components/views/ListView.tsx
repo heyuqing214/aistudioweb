@@ -5,7 +5,10 @@ import { ViewState } from '../../types';
 
 interface ListViewProps {
   type: ViewState.ARTICLES | ViewState.VIDEOS;
+  setView?: (view: ViewState) => void;
+  setSelectedArticle?: (id: string) => void;
 }
+
 
 export const ListView: React.FC<ListViewProps> = ({ type }) => {
   const isVideo = type === ViewState.VIDEOS;
