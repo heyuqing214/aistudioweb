@@ -12,7 +12,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentView, setView }) => {
     { label: '首页', value: ViewState.HOME },
     { label: '关于我', value: ViewState.ABOUT },
     { label: '文章', value: ViewState.ARTICLES },
-    { label: '视频', value: ViewState.VIDEOS },
+    // { label: '视频', value: ViewState.VIDEOS },
     { label: '产品', value: ViewState.PRODUCTS },
   ];
 
