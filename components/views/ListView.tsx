@@ -20,11 +20,11 @@ import React, { useState } from 'react';
 	    { id: '4', title: 'AI 编程实战：从零搭建个人网站', meta: 'YouTube • 1.2k views', date: '12:30', image: 'https://picsum.photos/seed/video4/400/250', tag: 'Coding' },
 	  ] : [
 	    // 龙虾养成创业日记系列（新增）
-	    { id: '101', title: 'Day 5: 把日记发布到你的个人网站', meta: '2026-03-22', date: '创业日记', image: 'https://picsum.photos/seed/diary5/400/200', tag: 'Deploy' },
-	    { id: '102', title: 'Day 4: 首页"加入海鲜市场"技能卡片', meta: '2026-03-20 (夜)', date: 'UI 设计', image: 'https://picsum.photos/seed/diary4/400/200', tag: 'Design' },
+	    { id: '105', title: 'Day 5: 把日记发布到你的个人网站', meta: '2026-03-22', date: '创业日记', image: 'https://picsum.photos/seed/diary5/400/200', tag: 'Deploy' },
+	    { id: '104', title: 'Day 4: 首页"加入海鲜市场"技能卡片', meta: '2026-03-20 (夜)', date: 'UI 设计', image: 'https://picsum.photos/seed/diary4/400/200', tag: 'Design' },
 	    { id: '103', title: 'Day 3: 研究 clawborn.live，实现一键复制技能', meta: '2026-03-20', date: '产品设计', image: 'https://picsum.photos/seed/diary3/400/200', tag: 'Research' },
-	    { id: '104', title: 'Day 2: 从零搭建"龙虾养成"平台', meta: '2026-03-19', date: '全栈开发', image: 'https://picsum.photos/seed/diary2/400/200', tag: 'Development' },
-	    { id: '105', title: 'Day 1: 从竞品情报到 AI Agent 技能市场', meta: '2026-03-18', date: '创业日记', image: 'https://picsum.photos/seed/diary1/400/200', tag: 'Startup' },
+	    { id: '102', title: 'Day 2: 从零搭建"龙虾养成"平台', meta: '2026-03-19', date: '全栈开发', image: 'https://picsum.photos/seed/diary2/400/200', tag: 'Development' },
+	    { id: '101', title: 'Day 1: 从竞品情报到 AI Agent 技能市场', meta: '2026-03-18', date: '创业日记', image: 'https://picsum.photos/seed/diary1/400/200', tag: 'Startup' },
 	    
 	    // 原有文章
 	    // { id: '1', title: '我可有可无的网友', meta: '2021-08-19', date: '随笔', image: 'https://picsum.photos/seed/art1/400/200', tag: 'Essay' },
@@ -57,7 +57,7 @@ import React, { useState } from 'react';
 	        <p className="text-gray-600 font-medium">
 	          {isVideo 
 	            ? '分享抽象唠嗑视频、日常生活 vlog、AI 编程的小白进阶史！' 
-	            : '描绘乱七八糟稀奇古怪的世界，人类的大脑真神奇。'}
+	            : '我是雨雨雨的狗腿子，欢迎来到我的成长日记，描绘乱七八糟稀奇古怪的世界，人类的大脑真神奇！'}
 	        </p>
 	      </div>
 
