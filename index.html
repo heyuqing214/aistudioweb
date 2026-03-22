@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>I am YuqingHe</title>
+    <link rel="icon" type="image/png" href="https://img.alicdn.com/imgextra/i2/O1CN01x5iRmk1pRYpwOvqbE_!!6000000005357-2-tps-1024-1024.png" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -40,24 +41,130 @@
       }
     </script>
     <style>
+      /* 弥散风背景设计 */
       body {
-        background-color: #f3f4f6;
+        background: linear-gradient(135deg, 
+          #E0E7F5 0%,      /* 淡紫蓝 - 左下 */
+          #D0DAF0 15%,     
+          #F8F9FA 30%,     /* 浅灰白 - 中心 */
+          #FFF9E6 50%,     /* 暖米黄 - 右上 */
+          #FFE5D6 70%,     /* 淡橙 - 右上边缘 */
+          #F0F4F8 100%     /* 淡蓝 - 右下 */
+        );
+        background-attachment: fixed;
+        background-size: 200% 200%;
+        animation: diffuse-shift 15s ease infinite;
         color: #1a1a1a;
+        min-height: 100vh;
       }
+
+      @keyframes diffuse-shift {
+        0%, 100% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+      }
+
+      /* 弥散光晕效果 */
+      .diffuse-glow {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        pointer-events: none;
+        z-index: -1;
+      }
+
+      .glow-blob {
+        position: absolute;
+        border-radius: 50%;
+        filter: blur(80px);
+        opacity: 0.6;
+        animation: float 20s ease-in-out infinite;
+      }
+
+      .glow-1 {
+        width: 500px;
+        height: 500px;
+        background: radial-gradient(circle, rgba(168, 85, 247, 0.3) 0%, transparent 70%);
+        top: -100px;
+        left: -100px;
+        animation-delay: 0s;
+      }
+
+      .glow-2 {
+        width: 600px;
+        height: 600px;
+        background: radial-gradient(circle, rgba(251, 146, 60, 0.25) 0%, transparent 70%);
+        top: 50%;
+        right: -150px;
+        animation-delay: -5s;
+      }
+
+      .glow-3 {
+        width: 450px;
+        height: 450px;
+        background: radial-gradient(circle, rgba(59, 130, 246, 0.25) 0%, transparent 70%);
+        bottom: -100px;
+        left: 20%;
+        animation-delay: -10s;
+      }
+
+      .glow-4 {
+        width: 550px;
+        height: 550px;
+        background: radial-gradient(circle, rgba(236, 72, 153, 0.2) 0%, transparent 70%);
+        top: 30%;
+        left: 30%;
+        animation-delay: -15s;
+      }
+
+      @keyframes float {
+        0%, 100% {
+          transform: translate(0, 0) scale(1);
+        }
+        25% {
+          transform: translate(30px, -30px) scale(1.05);
+        }
+        50% {
+          transform: translate(-20px, 20px) scale(0.95);
+        }
+        75% {
+          transform: translate(20px, 30px) scale(1.02);
+        }
+      }
+
+      /* 添加细微噪点纹理增强层次感 */
+      .noise-texture {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: -1;
+        opacity: 0.03;
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+      }
+
       /* Custom Scrollbar */
       ::-webkit-scrollbar {
         width: 10px;
       }
       ::-webkit-scrollbar-track {
-        background: #f1f1f1;
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 10px;
       }
       ::-webkit-scrollbar-thumb {
-        background: #1a1a1a;
-        border-radius: 5px;
-        border: 2px solid #f1f1f1;
+        background: linear-gradient(180deg, #a78bfa 0%, #f472b6 100%);
+        border-radius: 10px;
+        border: 2px solid rgba(255, 255, 255, 0.5);
       }
       ::-webkit-scrollbar-thumb:hover {
-        background: #555;
+        background: linear-gradient(180deg, #9333ea 0%, #ec4899 100%);
       }
     </style>
   <script type="importmap">
@@ -73,8 +180,17 @@
 </script>
 <link rel="stylesheet" href="/index.css">
 </head>
-  <body>
-    <div id="root"></div>
-  <script type="module" src="/index.tsx"></script>
-</body>
+	  <body>
+	    <!-- 弥散风背景效果 -->
+	    <div class="diffuse-glow">
+	      <div class="glow-blob glow-1"></div>
+	      <div class="glow-blob glow-2"></div>
+	      <div class="glow-blob glow-3"></div>
+	      <div class="glow-blob glow-4"></div>
+	    </div>
+	    <div class="noise-texture"></div>
+	    
+	    <div id="root"></div>
+	  <script type="module" src="/index.tsx"></script>
+	</body>
 </html>
