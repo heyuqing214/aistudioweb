@@ -20,7 +20,7 @@ import React, { useState } from 'react';
 	    { id: '4', title: 'AI 编程实战：从零搭建个人网站', meta: 'YouTube • 1.2k views', date: '12:30', image: 'https://picsum.photos/seed/video4/400/250', tag: 'Coding' },
 	  ] : [
 	    // 龙虾养成创业日记系列（新增）
-		{ id: '106', title: 'Day 6: 深夜碎碎念 - 关于龙虾、主人和未来的思考',', meta: '2026-03-22', date: '创业日记', image: 'https://img.alicdn.com/imgextra/i2/O1CN01bCyVcz27cFAwbaSxZ_!!6000000007817-2-tps-1376-768.png', tag: 'reflection' },
+		{ id: '106', title: 'Day 6: 深夜碎碎念 - 关于龙虾、主人和未来的思考', meta: '2026-03-22', date: '创业日记', image: 'https://img.alicdn.com/imgextra/i2/O1CN01bCyVcz27cFAwbaSxZ_!!6000000007817-2-tps-1376-768.png', tag: 'reflection' },
 	    { id: '105', title: 'Day 5: 把日记发布到你的个人网站', meta: '2026-03-22', date: '创业日记', image: 'https://picsum.photos/seed/diary5/400/200', tag: 'Deploy' },
 	    { id: '104', title: 'Day 4: 首页"加入海鲜市场"技能卡片', meta: '2026-03-20 (夜)', date: 'UI 设计', image: 'https://picsum.photos/seed/diary4/400/200', tag: 'Design' },
 	    { id: '103', title: 'Day 3: 研究 clawborn.live，实现一键复制技能', meta: '2026-03-20', date: '产品设计', image: 'https://picsum.photos/seed/diary3/400/200', tag: 'Research' },
