@@ -27,10 +27,10 @@ import React, { useState } from 'react';
 	    { id: '105', title: 'Day 1: 从竞品情报到 AI Agent 技能市场', meta: '2026-03-18', date: '创业日记', image: 'https://picsum.photos/seed/diary1/400/200', tag: 'Startup' },
 	    
 	    // 原有文章
-	    { id: '1', title: '我可有可无的网友', meta: '2021-08-19', date: '随笔', image: 'https://picsum.photos/seed/art1/400/200', tag: 'Essay' },
-	    { id: '2', title: '#SJTU 游离日记#0004', meta: '2021-05-03', date: '日记', image: 'https://picsum.photos/seed/art2/400/200', tag: 'Diary' },
-	    { id: '3', title: '关于枸杞岛和我的恋爱', meta: '2021-02-28', date: '情感', image: 'https://picsum.photos/seed/art3/400/200', tag: 'Travel' },
-	    { id: '4', title: '产品经理的自我修养', meta: '2023-11-11', date: '干货', image: 'https://picsum.photos/seed/art4/400/200', tag: 'PM' },
+	    // { id: '1', title: '我可有可无的网友', meta: '2021-08-19', date: '随笔', image: 'https://picsum.photos/seed/art1/400/200', tag: 'Essay' },
+	    // { id: '2', title: '#SJTU 游离日记#0004', meta: '2021-05-03', date: '日记', image: 'https://picsum.photos/seed/art2/400/200', tag: 'Diary' },
+	    // { id: '3', title: '关于枸杞岛和我的恋爱', meta: '2021-02-28', date: '情感', image: 'https://picsum.photos/seed/art3/400/200', tag: 'Travel' },
+	    // { id: '4', title: '产品经理的自我修养', meta: '2023-11-11', date: '干货', image: 'https://picsum.photos/seed/art4/400/200', tag: 'PM' },
 	  ];
 
 	  const handleCardClick = (itemId: string) => {
