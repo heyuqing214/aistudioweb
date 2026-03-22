@@ -14,11 +14,19 @@ export const ListView: React.FC<ListViewProps> = ({ type }) => {
   const items = isVideo ? [
     { id: '1', title: '有一个捧杀式领导是什么体验？', meta: 'Bilibili • 5669 views', date: '02:27', image: 'https://picsum.photos/seed/video1/400/250', tag: '职场' },
     { id: '2', title: 'Vlog. 吸取大学生的元气才能生存下去', meta: 'Bilibili • 6281 views', date: '02:28', image: 'https://picsum.photos/seed/video2/400/250', tag: 'VLOG' },
-    { id: '3', title: '25岁纯牛马全年消费支出大盘点', meta: 'Bilibili • 2.2w views', date: '02:48', image: 'https://picsum.photos/seed/video3/400/250', tag: '生活' },
+    { id: '3', title: '25 岁纯牛马全年消费支出大盘点', meta: 'Bilibili • 2.2w views', date: '02:48', image: 'https://picsum.photos/seed/video3/400/250', tag: '生活' },
     { id: '4', title: 'AI 编程实战：从零搭建个人网站', meta: 'YouTube • 1.2k views', date: '12:30', image: 'https://picsum.photos/seed/video4/400/250', tag: 'Coding' },
   ] : [
+    // 龙虾养成创业日记系列（新增）
+    { id: '101', title: 'Day 5: 把日记发布到你的个人网站', meta: '2026-03-22', date: '创业日记', image: 'https://picsum.photos/seed/diary5/400/200', tag: 'Deploy' },
+    { id: '102', title: 'Day 4: 首页"加入海鲜市场"技能卡片', meta: '2026-03-20 (夜)', date: 'UI 设计', image: 'https://picsum.photos/seed/diary4/400/200', tag: 'Design' },
+    { id: '103', title: 'Day 3: 研究 clawborn.live，实现一键复制技能', meta: '2026-03-20', date: '产品设计', image: 'https://picsum.photos/seed/diary3/400/200', tag: 'Research' },
+    { id: '104', title: 'Day 2: 从零搭建"龙虾养成"平台', meta: '2026-03-19', date: '全栈开发', image: 'https://picsum.photos/seed/diary2/400/200', tag: 'Development' },
+    { id: '105', title: 'Day 1: 从竞品情报到 AI Agent 技能市场', meta: '2026-03-18', date: '创业日记', image: 'https://picsum.photos/seed/diary1/400/200', tag: 'Startup' },
+    
+    // 原有文章
     { id: '1', title: '我可有可无的网友', meta: '2021-08-19', date: '随笔', image: 'https://picsum.photos/seed/art1/400/200', tag: 'Essay' },
-    { id: '2', title: '#SJTU游离日记#0004', meta: '2021-05-03', date: '日记', image: 'https://picsum.photos/seed/art2/400/200', tag: 'Diary' },
+    { id: '2', title: '#SJTU 游离日记#0004', meta: '2021-05-03', date: '日记', image: 'https://picsum.photos/seed/art2/400/200', tag: 'Diary' },
     { id: '3', title: '关于枸杞岛和我的恋爱', meta: '2021-02-28', date: '情感', image: 'https://picsum.photos/seed/art3/400/200', tag: 'Travel' },
     { id: '4', title: '产品经理的自我修养', meta: '2023-11-11', date: '干货', image: 'https://picsum.photos/seed/art4/400/200', tag: 'PM' },
   ];
